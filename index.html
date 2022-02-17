@@ -21,10 +21,11 @@
         function tempo() {
             let n1 = Number(window.prompt('Digite quantas páginas tem o livro que você quer ler: '))
             let n2 = Number(window.prompt('Digite quantas páginas do livro você pode ler por dia:'))
-            tempo = n1 / n2
+            tempo = n1 / n2       
+            let tempoFinal = Math.trunc(tempo);     
 
             let res = document.querySelector('section#res')
-            res.innerHTML = `<p>Você vai demorar <strong>${tempo} dias</strong> pra ler o livro</p>`
+            res.innerHTML = `<p>Você vai demorar <strong>${tempoFinal} dias</strong> pra ler o livro</p>`
         }
     </script>
 </body>
